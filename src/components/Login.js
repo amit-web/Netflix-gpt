@@ -4,16 +4,15 @@ import checkvalidateData from "../utils/validate";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from 'react-router-dom';
 import {updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser} from "../utils/userSlice";
+import { BACKGROUND_URL, USER_AVTAR } from "../utils/constants";
 
 
 const Login = () => {
   const [showSininform, setShowSininform] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const name = useRef(null);
@@ -42,7 +41,7 @@ const Login = () => {
             const user = userCredential.user;
             updateProfile(user, {
               displayName: name.current.value,
-              photoURL: "https://avatars.githubusercontent.com/u/52010882?v=4",
+              photoURL:USER_AVTAR,
             })
               .then(() => {
                 const { uid, email, displayName,photoURL} = auth.currentUser;
@@ -54,7 +53,6 @@ const Login = () => {
                     photoURL: photoURL
                   })
                 );
-                navigate("/browse");
               })
               .catch((error) => {
                 setErrorMessage(error.message);
@@ -73,8 +71,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user  
-          console.log(user)
-          navigate('/browse')
+      
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -82,7 +79,6 @@ const Login = () => {
           setErrorMessage(
             errorCode + "-" + errorMessage
           )
-          navigate('/')
         });
     }
   };
@@ -91,7 +87,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/85ff76db-39e5-423a-afbc-97d3e74db71b/null/IN-en-20240909-TRIFECTA-perspective_b22117e0-4610-4d57-a695-20f77d241a4a_large.jpg"
+          src={BACKGROUND_URL}
           alt="backgroundImg"
         />
       </div>

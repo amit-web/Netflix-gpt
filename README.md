@@ -13,6 +13,11 @@
 --create signup user Account
 --Implement signIn user API
 --Set up our store usig redux
+--update profile
+--bug fix fo user displayname and profile picture update;
+--bug fix of roting ,using authentication, without authentication restricting user to go to browse page;
+--Unsubscribed to the onAuthStateChange callback;
+--Add hardcoded value in constants:--->
 
 
 
