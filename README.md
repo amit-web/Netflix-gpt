@@ -18,6 +18,15 @@
 --bug fix of roting ,using authentication, without authentication restricting user to go to browse page;
 --Unsubscribed to the onAuthStateChange callback;
 --Add hardcoded value in constants:--->
+--Register on TMDB and get API key 
+-- fetch movie list of now playing to show in browse page:--->
+--custom hooks for fetch movie trailer and movie list
+--update store with movie data;
+--planning maincontaier and secondary container;
+--fetch data for trailer video
+--update store with trailer video data
+--embedded the youtube video and make it autoplay and mute
+---tailwind classes to make main container look awesome
 
 
 
