@@ -31,6 +31,11 @@
 --Build movie card
 --Build movie list
 --custom hooks for popular movie data:---->
+-GPT search feature
+--GPT search bar 
+--Multi language feature in our app;
+--Integrate the GPT API (get open AI key);
+
 
 
 
