@@ -73,7 +73,7 @@ OpenAI API: Fetching GPT-based movie suggestions.
 
 **1. Clone the repository**
 
-git clone https://github.com/your-username/netflix-gpt.git
+git clone https://github.com/amit-web/Netflix-gpt.git)
 cd netflix-gpt
 
 **2. Install dependencies**
