@@ -1,5 +1,4 @@
 # NETFLIX GPT
-
 --create react app
 --configured tailwind css
 --Header
@@ -35,30 +34,14 @@
 --GPT search bar 
 --Multi language feature in our app;
 --Integrate the GPT API (get open AI key);
+--GET OPEN AI api key;
+--Fetched gpt movie suggestions from TMDB
+--created gpt slice
+--reused movie list component to make suggestion container
+==memoization
+--Adding .env file to git ignore;
+--Made our site responsive
 
 
+------Done with the NetflixGPT-----------
 
-
-
-# Feature
--Login/Signup form
-
-   - SignIn/Signup form
-   -redirect to browse page
-
-
-
--Browse (Only comes after Authentication!!!)
- - Header
- -Mainmovie
-    -Trailer in background
-    -Title and description
-    -Movie suggestions 
-       - Movie List into n
-       -
-
-
--NetflixGPT
-
-    - search bar 
-    -Movie suggestion:
