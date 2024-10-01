@@ -3,10 +3,9 @@ import Browse from "./Browse";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
 import Login from "./Login";
-import { useDispatch } from "react-redux";
+import PlayingVideo from "./PlayingVideo.js";
 
 const Body = () => {
-  const dispatch = useDispatch();
   const appRouter = createBrowserRouter([
     {
       path: "/",
@@ -15,6 +14,10 @@ const Body = () => {
     {
       path: "/browse",
       element: <Browse />,
+    },
+    {
+      path: "/PlayingVideo/:movieId",
+      element: <PlayingVideo/>,
     },
   ]);
 
