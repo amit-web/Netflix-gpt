@@ -59,6 +59,12 @@ const Footer = () => {
               <a href="#" className="hover:underline">
                 Contact Us
               </a>
+              <a href="#" className="hover:underline">
+                Corporate Information
+              </a>
+              <a href="#" className="hover:underline">
+                Contact Us
+              </a>
             </div>
 
             <div className="flex justify-center mb-6">
